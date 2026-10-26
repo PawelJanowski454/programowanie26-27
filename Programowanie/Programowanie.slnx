@@ -14,6 +14,9 @@
   <Folder Name="/C#/03. ReferenceTypes/">
     <Project Path="ReferenceTypesConsolApp/ReferenceTypesConsoleApp.csproj" Id="022db2f0-73ff-4e12-b60d-e583a342b4ac" />
   </Folder>
+  <Folder Name="/C#/04. Object/">
+    <Project Path="ObjectConsoleApp/ObjectConsoleApp.csproj" Id="623340b1-d54b-4363-9208-2fb5d0c69009" />
+  </Folder>
   <Folder Name="/C++/" />
   <Folder Name="/C++/Strukturalne/" />
   <Folder Name="/C++/Strukturalne/01. Basics/">
