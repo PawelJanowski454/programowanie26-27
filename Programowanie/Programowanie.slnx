@@ -17,6 +17,9 @@
   <Folder Name="/C#/04. Object/">
     <Project Path="ObjectConsoleApp/ObjectConsoleApp.csproj" Id="623340b1-d54b-4363-9208-2fb5d0c69009" />
   </Folder>
+  <Folder Name="/C#/05. Zadania/">
+    <Project Path="PrinterTaskConsoleApp/PrinterTaskConsoleApp.csproj" Id="71a96d7a-1400-48f5-88a4-af7e7d2d0794" />
+  </Folder>
   <Folder Name="/C++/" />
   <Folder Name="/C++/Strukturalne/" />
   <Folder Name="/C++/Strukturalne/01. Basics/">
