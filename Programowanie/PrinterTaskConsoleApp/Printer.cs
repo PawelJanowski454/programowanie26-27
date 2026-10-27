@@ -18,5 +18,11 @@ namespace PrinterTaskConsoleApp
             Console.WriteLine("Info o obiekcie");
             Console.WriteLine(PAPERCOUNT);
         }
+        
+    public Printer()
+        {
+            Console.WriteLine("Działa konstruktor");
+        }
     }
+
 }
