@@ -1,4 +1,6 @@
-﻿using ObjectConsoleApp;
+﻿
+
+using ObjectConsoleApp;
 
 Point firstPoint;
 
@@ -18,10 +20,16 @@ firstPoint.Show();
 
 //Point secondPoint = new Point();
 //var secondPoint = new Point();
-Point secondPoint = new();
+Point secondPoint = new(15, 8);
+secondPoint.Show();
 
 Point thirdPoint = new() { X = 18, Y = 197 };
 //thirdPoint.X = 18;
 //thirdPoint.Y = 197;
 
 thirdPoint.Show();
+
+Point3D first3DPoint = new(15, 48, 77);
+first3DPoint.Z = 19;
+
+first3DPoint.Show();
