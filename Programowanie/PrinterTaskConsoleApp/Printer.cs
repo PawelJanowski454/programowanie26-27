@@ -1,28 +1,60 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace PrinterTaskConsoleApp
 {
     internal class Printer
     {
-        int Name { get; set; }
 
-        private int PaperCount;
-
-        int PAPERCOUNT { get; set; }
+        private string name;
+        private int paperCount;
 
 
-    public void Show()
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public int PaperCount
+        {
+            get { return paperCount; }
+            set { if (value >= 0) 
+                    paperCount = value; 
+            }
+        }
+
+        public void Show()
         {
             Console.WriteLine("Info o obiekcie");
-            Console.WriteLine(PAPERCOUNT);
+            Console.WriteLine(paperCount);
+            Console.WriteLine(name);
         }
-        
-    public Printer()
-        {
-            Console.WriteLine("Działa konstruktor");
-        }
-    }
 
+        public Printer(string prname, int value)
+        {
+            name = prname;
+            PaperCount = value;
+        }
+
+        public void Check(int value)
+        {
+            if (value >= 0)
+            {
+                paperCount = value;
+            }
+        }
+
+        public bool Print(int pageCount)
+        {
+            if (pageCount > 0 && pageCount <= paperCount) {
+                paperCount -= pageCount;
+                return true;
+            }
+            return false;
+        }
+
+
+    }
 }
+
+

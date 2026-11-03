@@ -1,10 +1,26 @@
 ﻿
 using PrinterTaskConsoleApp;
 Printer printer;
-printer = new Printer();
-printer.Show();
-
-
+printer = new Printer("Drukarka", 10);
+Printer selectedPrinter = printer;
+int startpaper = selectedPrinter.PaperCount;
+int count = selectedPrinter.PaperCount;
+Console.WriteLine("Wpisz liczbe stron: ");
+if (int.TryParse(Console.ReadLine(), out count))
+{
+    if (selectedPrinter.Print(count))
+    {
+        Console.WriteLine("Udało się " + count);
+    }
+    else
+        Console.WriteLine("Nie udało się");
+}
+else Console.WriteLine("Liczba nieprawidłowa");
+Console.WriteLine(printer.PaperCount);
+Console.WriteLine(selectedPrinter.PaperCount);
+//Z dwu powyższych linijek otrzymujemy wartość papieru która zostaje po zrobieniu stron, obydwie wskazują na ten sam obiek przez referencji - mają takie same wartości
+Console.WriteLine(startpaper);
+// Trzecia linijka pokazuje ile papieru mielismy na początku
 
 
 
